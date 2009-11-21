@@ -1,0 +1,24 @@
+Mongobackup
+===========
+mongobackup is the mongodb version of ey-backup used by flex and ey solo to upload db backups to buckets on AWS.
+mongobackup has extra options to start/stop db before backup
+
+
+Example
+=======
+
+
+Usage: mongobackup [-flag] [argument]
+mongobackup: backing up your shit since way back when...
+********************************************************************************
+    -l, --list-backup DATABASE       List mysql backups for DATABASE
+    -n, --new-backup                 Create new mysql backup
+    -c, --config CONFIG              Use config file.
+    -d, --download BACKUP_INDEX      download the backup specified by index. Run eybackup -l to get the index.
+    -e, --engine DATABASE_ENGINE     The database engine. ex: mysql, postgres, mongodb.
+    -r, --restore BACKUP_INDEX       Download and apply the backup specified by index WARNING! will overwrite the current db with the backup. Run mongobackup -l to get the index.
+
+
+
+
+Copyright (c) 2009 Blythe Dunham, released under the MIT license
